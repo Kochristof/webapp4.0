@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMlSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+	version="2.4">
+<display-name>Eshop</display-name>
+	<servlet>
+		<servlet-name>Eshop4.0</servlet-name>
+		<servlet-class>com.example.web.EshopSelect</servlet-class>
+		<init-param>
+ 			<param-name>adminEmail</param-name>
+ 			<param-value>kochristof@uth.gr</param-value>
+ 		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Eshop4.0</servlet-name>
+		<url-pattern>/SelectEshop.do</url-pattern>
+	</servlet-mapping>
+	
+	<context-param>
+ 		<param-name>adminEmail</param-name>
+ 		<param-value>kochristof@uth.gr</param-value>
+ 	</context-param>
+ 	
+ 	<error-page>
+		<exception-type>java.lang.Exception</exception-type>
+		<location>/Error.jsp</location>
+	</error-page>
+ 	
+<!--<session-config>
+		<session-timeout> 20 </session-timeout>
+	</session-config>
+	email is=$initParam
+	
+	<listener>
+		 <listener-class>
+		 	com.example.MyServletContextListener
+		 </listener-class>
+	</listener>
+ -->
+ 
+</web-app>  
+

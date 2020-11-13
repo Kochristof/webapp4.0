@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>Eshop4.0</title>
+	<style>
+		body {
+			background-image: url("eshop.jpg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
+	</style>	
+</head>
+
+<body>
+	<h1>Eshop</h1>
+     	<h2>
+       		<a href="new">Add New User/Order</a>
+        	&nbsp;&nbsp;&nbsp;
+        	<a href="list">List All Users/Orders</a>
+    	</h2>
+    	
+	<h1 align="center">PC Selection Page</h1>
+	<form method="POST" action="SelectEshop.do">
+		<p>ID:</p> <!--something -->
+		<p>Select PC characteristics</p>
+		<input type="text" name="name"/>
+		State:
+		<select name="state" size="1">
+			<option value="Desktop"> Desktop </option>
+			<option value="Laptop"> Laptop </option>
+			<option value="Mac"> Mac </option>
+		</select>
+		<br><br>
+		<h2>
+			<input type="SUBMIT">
+		</h2>
+	</form>
+</body>
+</html>
